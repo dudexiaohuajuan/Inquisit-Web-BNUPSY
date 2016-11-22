@@ -1,0 +1,33 @@
+<picture intro>
+/items = ("intro.jpg")
+/size = (1000,700)
+  </picture>
+  
+ <picture 结束语>
+  	/ items = ("结束语.jpg")
+  	/size = (1000,700)
+  </picture>
+ 
+  <trial intro>
+  	/validresponse = ("5")
+  	/stimulusframes = [1=intro]
+  	/recorddata = false
+  </trial>
+ 
+ <trial 结束语>
+ 	/validresponse = (" ")
+  	/stimulusframes = [1=结束语]
+  	/recorddata = false
+ </trial>
+  
+  <block introblk>
+  	/screencolor = (0,0,0)
+  	/trials = [1 = intro]
+  </block>
+ 
+  <block 结束语blk>
+  	/screencolor = (0,0,0)
+  	/trials = [1 = 结束语]
+  </block>
+ 
+ 
